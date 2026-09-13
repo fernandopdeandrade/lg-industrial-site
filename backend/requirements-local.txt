@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+motor
+pymongo
+pydantic
+python-dotenv
+bcrypt
+pyjwt
+httpx
+email-validator

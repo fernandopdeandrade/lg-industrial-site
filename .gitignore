@@ -1,0 +1,106 @@
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+*.env
+*.env.*
+!*.env.example
+backend/atlas-credentials.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+ENV/
+backend/.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.pyre/
+.dmypy.json
+dmypy.json
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Node.js and frontend build output
+node_modules/
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+.npm/
+.yarn/
+.yarn-cache/
+.yarn-integrity
+.pnpm-store/
+
+# Test and coverage output
+coverage/
+.nyc_output/
+*.lcov
+junit.xml
+
+# Logs and runtime output
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary files
+.tmp/
+tmp/
+temp/
+.cache/
+.parcel-cache/
+.eslintcache
+*.swp
+*.swo
+*~
+
+# IDE and editor files
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.iml
+*.code-workspace
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Local databases and uploads
+*.sqlite
+*.sqlite3
+*.db
+backend/uploads/
+backend/media/
+
+# Docker local overrides and volumes
+docker-compose.override.yml
+docker-compose.local.yml
+.docker/
+
+# Generated reports and local tooling artifacts
+reports/
+*.generated.*
