@@ -1,7 +1,7 @@
+import { COMPANY_CITY, COMPANY_EMAIL, NAV_LINKS, waLink, WHATSAPP_DISPLAY } from "@/lib/constants";
+import { Mail, MapPin, Menu, MessageCircle, X } from "lucide-react";
 import { useState } from "react";
 import { Link, NavLink, Outlet } from "react-router-dom";
-import { Menu, X, MessageCircle, Mail, MapPin } from "lucide-react";
-import { NAV_LINKS, waLink, WHATSAPP_DISPLAY, COMPANY_EMAIL, COMPANY_CITY } from "@/lib/constants";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -139,7 +139,7 @@ function Footer() {
           LG INDUSTRIAL
         </div>
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pt-8 border-t border-white/5 mt-4">
-          <p className="text-stone text-xs">© 2026 LG Industrial. Todos os direitos reservados.</p>
+          <p className="text-stone text-xs">© 2026 LG Industrial. Todos os direitos reservados. "Desenvolvido por Fernando Pereira de Andrade"</p>
           <Link to="/admin/login" data-testid="footer-admin-link" className="text-stone/50 text-xs hover:text-stone transition-colors">
             Área restrita
           </Link>
