@@ -485,10 +485,20 @@ async def shutdown_db_client():
 
 app.include_router(api_router)
 
-frontend_url = os.environ.get("FRONTEND_URL", "http://localhost:3000")
+frontend_url = os.environ.get("FRONTEND_URL", "http://localhost:3000").rstrip("/")
+configured_origins = os.environ.get("CORS_ORIGINS", "")
+cors_origins = [
+    origin.strip().rstrip("/")
+    for origin in configured_origins.split(",")
+    if origin.strip()
+]
+if frontend_url not in cors_origins:
+    cors_origins.append(frontend_url)
+if "http://localhost:3000" not in cors_origins:
+    cors_origins.append("http://localhost:3000")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[frontend_url, "http://localhost:3000"],
+    allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
