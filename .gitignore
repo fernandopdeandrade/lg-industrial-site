@@ -106,3 +106,6 @@ docker-compose.local.yml
 # Generated reports and local tooling artifacts
 reports/
 *.generated.*
+
+# Local Netlify folder
+.netlify
