@@ -35,20 +35,20 @@ export const NAV_LINKS = [
 export const SERVICES = [
   {
     num: "01",
-    title: "Diagnóstico Eletrônico",
-    desc: "Scanners multimarca de última geração leem falhas, sensores e telemetria em minutos — sem achismo, direto na causa raiz.",
+    title: "Diagnóstico",
+    desc: "Encontramos e resolvemos possíveis problemas em minutos — sem achismo, direto na causa raiz.",
     image: IMAGES.mechanic,
   },
   {
     num: "02",
     title: "Manutenção Preventiva",
-    desc: "Planos sob medida por horas de operação. Troca de filtros, lubrificação e calibração antes que a falha aconteça.",
+    desc: "Planos sob medida por horas de operação. Troca de componentes e calibração antes que a falha aconteça.",
     image: IMAGES.repair,
   },
   {
     num: "03",
     title: "Manutenção Corretiva",
-    desc: "Motor, transmissão, hidráulica e elétrica embarcada. Reparo com peças de procedência e garantia de serviço.",
+    desc: "Reparos com peças de procedência e garantia de serviço.",
     image: IMAGES.gears,
   },
   {
@@ -65,8 +65,8 @@ export const SERVICES = [
   },
   {
     num: "06",
-    title: "Retrofit e Modernização",
-    desc: "Atualizamos máquinas consolidadas com telemetria, piloto automático e eletrônica embarcada de nova geração.",
+    title: "Modernização",
+    desc: "Trabalhamos com ferramentas embarcadas de nova geração.",
     image: IMAGES.aerial,
   },
 ];

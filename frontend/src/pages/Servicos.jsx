@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
-import { SERVICES } from "@/lib/constants";
-import { Reveal, MaskedLine } from "@/components/Reveal";
 import EditorialMarquee from "@/components/EditorialMarquee";
+import { MaskedLine, Reveal } from "@/components/Reveal";
+import { SERVICES } from "@/lib/constants";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Servicos() {
   return (

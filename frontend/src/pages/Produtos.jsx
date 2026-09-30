@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import { api } from "@/lib/api";
-import { Reveal, MaskedLine } from "@/components/Reveal";
 import QuoteDialog from "@/components/QuoteDialog";
+import { MaskedLine, Reveal } from "@/components/Reveal";
+import { api } from "@/lib/api";
+import { useEffect, useState } from "react";
 
 export default function Produtos() {
   const [products, setProducts] = useState([]);
@@ -20,7 +20,7 @@ export default function Produtos() {
       <section className="max-w-7xl mx-auto px-6 md:px-12 pt-40 pb-16">
         <p className="overline-label mb-6">Produtos</p>
         <h1 className="font-display font-black tracking-tighter leading-[0.92] text-5xl sm:text-6xl md:text-7xl text-cream" data-testid="produtos-title">
-          <MaskedLine delay={0.1}>MÁQUINAS DE</MaskedLine>
+          <MaskedLine delay={0.1}>FERRAMENTAS DE</MaskedLine>
           <MaskedLine delay={0.25}>
             <span className="font-serif italic font-medium text-earth">última geração.</span>
           </MaskedLine>

@@ -1,18 +1,18 @@
-import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowRight, Wrench, Tractor, Cpu } from "lucide-react";
-import { api } from "@/lib/api";
-import { IMAGES, SERVICES } from "@/lib/constants";
-import { MaskedLine, Reveal } from "@/components/Reveal";
 import EditorialMarquee from "@/components/EditorialMarquee";
 import QuoteDialog from "@/components/QuoteDialog";
+import { MaskedLine, Reveal } from "@/components/Reveal";
+import { api } from "@/lib/api";
+import { IMAGES, SERVICES } from "@/lib/constants";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { ArrowRight, Cpu, Tractor, Wrench } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const STATS = [
-  { value: "15+", label: "Anos de estrada" },
-  { value: "500+", label: "Máquinas atendidas" },
-  { value: "24h", label: "Resposta em campo" },
-  { value: "100%", label: "Diagnóstico eletrônico" },
+  { value: "18+", label: "Anos de estrada" },
+  { value: "Inúmeros", label: "Equipamentos e máquinas atendidas" },
+  { value: "Atendimento", label: "Resposta em campo" },
+  { value: "100%", label: "Diagnóstico e execução" },
 ];
 
 const SERVICE_ICONS = [Cpu, Wrench, Tractor];
@@ -62,8 +62,8 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.85, duration: 0.8 }}
           >
-            Manutenção de máquinas agrícolas com ferramentas e tecnologia de última geração.
-            Diagnóstico eletrônico, atendimento em campo e peças de procedência.
+            Manutenção e fabricação de maquinários agrícolas com ferramentas e tecnologia de última geração.
+            Atendimento em campo e vendas de peças de procedência.
           </motion.p>
           <motion.div
             className="mt-10 flex flex-wrap gap-4"
@@ -147,7 +147,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-24 md:py-32">
           <Reveal className="flex flex-wrap items-end justify-between gap-6">
             <div>
-              <p className="overline-label mb-4">Máquinas de ponta</p>
+              <p className="overline-label mb-4">Máquinários de ponta</p>
               <h2 className="font-display font-bold tracking-tight text-3xl sm:text-4xl md:text-5xl text-cream">
                 Última geração,<br />pronta para a sua safra.
               </h2>
