@@ -191,7 +191,7 @@ export default function Home() {
         <div className="grid md:grid-cols-3 gap-12 mt-8">
           {[
             { num: "01", title: "O campo não espera", text: "Cada hora de máquina parada é safra em risco. Trabalhamos com a urgência de quem entende o relógio da lavoura." },
-            { num: "02", title: "Tecnologia a serviço da terra", text: "Ferramentas de diagnóstico de última geração e treinamento constante. Precisão de fábrica, no meio do campo." },
+            { num: "02", title: "Tecnologia a serviço da terra", text: "Ferramentas de precisão de última geração e treinamento constante. Precisão de fábrica, no meio do campo." },
             { num: "03", title: "Palavra de fronteira", text: "De Uruguaiana para toda a fronteira oeste. Relação de confiança construída safra após safra, aperto de mão após aperto de mão." },
           ].map((c, i) => (
             <Reveal key={c.num} delay={i * 0.12}>
