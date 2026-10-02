@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { MessageCircle, Mail, MapPin, Clock, Send } from "lucide-react";
-import { toast } from "sonner";
-import { api, formatApiError } from "@/lib/api";
-import { waLink, WHATSAPP_DISPLAY, COMPANY_EMAIL, COMPANY_CITY } from "@/lib/constants";
 import { MaskedLine, Reveal } from "@/components/Reveal";
+import { api, formatApiError } from "@/lib/api";
+import { COMPANY_CITY, COMPANY_EMAIL, waLink, WHATSAPP_DISPLAY } from "@/lib/constants";
+import { Clock, Mail, MapPin, MessageCircle, Send } from "lucide-react";
+import { useState } from "react";
+import { toast } from "sonner";
 
 export default function Contato() {
   const [sending, setSending] = useState(false);
@@ -152,6 +152,19 @@ export default function Contato() {
             </div>
           </form>
         </Reveal>
+      </section>
+      <section className="px-6 md:px-12 pb-24" aria-label="Localização da LG Industrial">
+        <div className="relative mx-auto h-80 max-w-7xl overflow-hidden rounded-2xl border border-earth/70 bg-surface shadow-[0_28px_60px_rgba(0,0,0,0.72),0_0_0_1px_rgba(216, 110, 24, 0.55),0_0_48px_rgba(231, 113, 17, 0.4)] transition-shadow duration-500 hover:shadow-[0_36px_76px_rgba(0,0,0,0.8),0_0_0_1px_rgba(153,98,54,0.7),0_0_64px_rgba(153,98,54,0.55)] sm:h-96 lg:h-[32rem]">
+          <iframe
+            className="absolute inset-0 h-full w-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3463.4936280456172!2d-57.05215212375782!3d-29.763364875066287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94535b1b9026e10f%3A0x9c55dd21746866c3!2sLG%20INDUSTRIAL%20METALURGICA!5e0!3m2!1spt-BR!2sbr!4v1790897091769!5m2!1spt-BR!2sbr"
+            title="LG Industrial Metalúrgica no Google Maps"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
       </section>
     </div>
   );

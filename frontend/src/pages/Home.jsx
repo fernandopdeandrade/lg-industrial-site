@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const STATS = [
   { value: "18+", label: "Anos de estrada" },
   { value: "Inúmeros", label: "Equipamentos e máquinas atendidas" },
-  { value: "Atendimento", label: "Resposta em campo" },
+  { value: "Rápida", label: "Resposta em campo" },
   { value: "100%", label: "Diagnóstico e execução" },
 ];
 
