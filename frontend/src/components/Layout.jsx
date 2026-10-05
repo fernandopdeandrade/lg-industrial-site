@@ -133,7 +133,7 @@ function Footer() {
           </div>
         </div>
         <div
-          className="font-display font-black leading-none text-cream/5 select-none whitespace-nowrap overflow-hidden text-[16vw]"
+          className="font-display font-black leading-none text-cream/5 select-none whitespace-nowrap overflow-hidden text-[7vw]"
           aria-hidden="true"
         >
           LG INDUSTRIAL
