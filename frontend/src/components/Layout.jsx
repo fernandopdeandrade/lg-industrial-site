@@ -11,9 +11,12 @@ function Navbar() {
         <Link
           to="/"
           data-testid="nav-logo"
-          className="font-display font-black text-xl tracking-tight text-cream"
+          className="inline-flex items-center gap-2 font-display font-black text-xl tracking-tight text-cream"
         >
-          LG<span className="text-earth">.</span>INDUSTRIAL
+          <img src="/images/logo-lg-insdustrial.png" alt="Logo da LG Industrial" className="h-8 w-auto" />
+          <span>
+            LG<span className="text-earth">.</span>INDUSTRIAL
+          </span>
         </Link>
         <nav className="hidden lg:flex items-center gap-8">
           {NAV_LINKS.map((l) => (
@@ -133,10 +136,15 @@ function Footer() {
           </div>
         </div>
         <div
-          className="font-display font-black leading-none text-cream/5 select-none whitespace-nowrap overflow-hidden text-[7vw]"
+          className="inline-flex items-center gap-[0.16em] font-display font-black leading-none text-cream/5 select-none whitespace-nowrap overflow-hidden text-[7vw]"
           aria-hidden="true"
         >
-          LG INDUSTRIAL
+          <img
+            src="/images/logo-lg-insdustrial.png"
+            alt=""
+            className="h-[0.8em] w-auto shrink-0 opacity-5"
+          />
+          <span>LG INDUSTRIAL</span>
         </div>
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pt-8 border-t border-white/5 mt-4">
           <p className="text-stone text-xs">© 2026 LG Industrial. Todos os direitos reservados. "Desenvolvido por Fernando Pereira de Andrade"</p>

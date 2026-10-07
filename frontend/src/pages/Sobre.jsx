@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { MaskedLine, Reveal } from "@/components/Reveal";
 import { IMAGES } from "@/lib/constants";
-import { Reveal, MaskedLine } from "@/components/Reveal";
+import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CHAPTERS = [
   {
@@ -12,7 +12,7 @@ const CHAPTERS = [
   {
     num: "02",
     title: "Oficina de última geração",
-    text: "Investimos continuamente em scanners de diagnóstico multimarca, ferramental de precisão e capacitação técnica. O resultado é um nível de serviço que antes só existia nos grandes centros — agora disponível na porteira da sua fazenda.",
+    text: "Investimos continuamente em ferramental de precisão e capacitação técnica. O resultado é um nível de serviço que antes só existia nos grandes centros — agora disponível na porteira da sua fazenda.",
   },
   {
     num: "03",
