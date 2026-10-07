@@ -1,6 +1,6 @@
-export const WHATSAPP_NUMBER = "5555997211650";
-export const WHATSAPP_DISPLAY = "(55) 99721-1650";
-export const COMPANY_EMAIL = "pupygreen@gmail.com";
+export const WHATSAPP_NUMBER = "5555984316143";
+export const WHATSAPP_DISPLAY = "(55) 984316143";
+export const COMPANY_EMAIL = "lgindustrial.comercial@gmail.com";
 export const COMPANY_CITY = "Uruguaiana, Rio Grande do Sul";
 
 export const waLink = (text) =>
@@ -30,6 +30,21 @@ export const NAV_LINKS = [
   { to: "/sobre", label: "Sobre", testId: "nav-link-sobre" },
   { to: "/politica", label: "Política", testId: "nav-link-politica" },
   { to: "/contato", label: "Contato", testId: "nav-link-contato" },
+];
+
+export const SOCIOS = [
+  {
+    nome: "Luiz Antonio Alves Gomes",
+    cargo: "Sócio",
+  },
+  {
+    nome: "Luiz Antonio Alves Gomes Junior",
+    cargo: "Sócio",
+  },
+  {
+    nome: "Vanessa Fragoso de Souza Frizzo",
+    cargo: "Sócio-Administrador",
+  },
 ];
 
 export const SERVICES = [

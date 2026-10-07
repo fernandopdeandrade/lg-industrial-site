@@ -1,4 +1,4 @@
-import { COMPANY_CITY, COMPANY_EMAIL, NAV_LINKS, waLink, WHATSAPP_DISPLAY } from "@/lib/constants";
+import { COMPANY_CITY, COMPANY_EMAIL, NAV_LINKS, SOCIOS, waLink, WHATSAPP_DISPLAY } from "@/lib/constants";
 import { Mail, MapPin, Menu, MessageCircle, X } from "lucide-react";
 import { useState } from "react";
 import { Link, NavLink, Outlet } from "react-router-dom";
@@ -108,6 +108,17 @@ function Footer() {
             <p className="flex items-center gap-3 text-stone py-1">
               <MapPin size={16} className="text-earth" /> {COMPANY_CITY}
             </p>
+            <div className="mt-4 border-t border-white/5 pt-4">
+              <p className="text-xs font-bold uppercase tracking-widest text-stone mb-2">Sócios</p>
+              <div className="flex flex-col gap-2">
+                {SOCIOS.map((socio) => (
+                  <p key={socio.nome} className="text-sm leading-snug">
+                    <span className="text-cream">{socio.nome}</span>
+                    <span className="block text-xs text-stone">{socio.cargo}</span>
+                  </p>
+                ))}
+              </div>
+            </div>
           </div>
           <div>
             <p className="overline-label mb-4">Navegação</p>

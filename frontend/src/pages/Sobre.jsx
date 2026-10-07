@@ -1,5 +1,5 @@
 import { MaskedLine, Reveal } from "@/components/Reveal";
-import { IMAGES } from "@/lib/constants";
+import { IMAGES, SOCIOS } from "@/lib/constants";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -57,6 +57,27 @@ export default function Sobre() {
                   <h2 className="font-display font-bold tracking-tight text-3xl sm:text-4xl text-cream">{c.title}</h2>
                   <p className="mt-5 text-stone text-base md:text-lg font-light leading-relaxed">{c.text}</p>
                 </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="max-w-7xl mx-auto px-6 md:px-12 pb-24 md:pb-28">
+        <p className="overline-label mb-12">Sócios administradores</p>
+        <div className="grid gap-6 md:grid-cols-3">
+          {SOCIOS.map((socio) => (
+            <Reveal key={socio.nome}>
+              <div className="border border-white/10 bg-surface/40 p-6 md:p-8 h-full">
+                <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-full border border-earth/50 bg-earth/10 font-display text-lg font-black text-earth">
+                  {socio.nome
+                    .split(" ")
+                    .slice(0, 2)
+                    .map((parte) => parte[0])
+                    .join("")}
+                </div>
+                <h3 className="font-display text-2xl font-bold text-cream leading-tight">{socio.nome}</h3>
+                <p className="mt-3 text-sm uppercase tracking-[0.18em] text-earth">{socio.cargo}</p>
               </div>
             </Reveal>
           ))}
