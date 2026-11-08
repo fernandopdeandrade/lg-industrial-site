@@ -1,12 +1,5 @@
-import {
-    COMPANY_CITY,
-    COMPANY_EMAIL,
-    NAV_LINKS,
-    SOCIOS,
-    waLink,
-    WHATSAPP_DISPLAY,
-} from "@/lib/constants";
-import { Mail, MapPin, Menu, MessageCircle, Wrench, X } from "lucide-react";
+import { COMPANY_CITY, COMPANY_EMAIL, NAV_LINKS, SOCIOS, waLink, WHATSAPP_DISPLAY } from "@/lib/constants";
+import { Mail, MapPin, Menu, MessageCircle, X } from "lucide-react";
 import { useState } from "react";
 import { Link, NavLink, Outlet } from "react-router-dom";
 
@@ -18,16 +11,11 @@ function Navbar() {
         <Link
           to="/"
           data-testid="nav-logo"
-          className="inline-flex items-center gap-3 font-display font-black text-xl tracking-tight text-cream"
+          className="inline-flex items-center gap-2 font-display font-black text-xl tracking-tight text-cream"
         >
-          <span className="grid h-9 w-9 place-items-center border border-earth/50 text-earth">
-            <Wrench size={17} aria-hidden="true" />
-          </span>
-          <span className="flex flex-col leading-none">
-            <span>LAG</span>
-            <span className="mt-1 text-[9px] font-bold tracking-[0.2em] text-stone">
-              MANUTENÇÕES
-            </span>
+          <img src="/images/logo-lg-insdustrial.png" alt="Logo da LG Industrial" className="h-8 w-auto" />
+          <span>
+            LG<span className="text-earth">.</span>INDUSTRIAL
           </span>
         </Link>
         <nav className="hidden lg:flex items-center gap-8">
@@ -47,9 +35,7 @@ function Navbar() {
           ))}
         </nav>
         <a
-          href={waLink(
-            "Olá! Vim pelo site da LAG-Manutenções e gostaria de atendimento."
-          )}
+          href={waLink("Olá! Vim pelo site da LG Industrial e gostaria de atendimento.")}
           target="_blank"
           rel="noopener noreferrer"
           data-testid="nav-whatsapp-btn"
@@ -75,18 +61,14 @@ function Navbar() {
               data-testid={`mobile-${l.testId}`}
               onClick={() => setOpen(false)}
               className={({ isActive }) =>
-                `text-sm font-bold uppercase tracking-[0.18em] ${
-                  isActive ? "text-mist" : "text-stone"
-                }`
+                `text-sm font-bold uppercase tracking-[0.18em] ${isActive ? "text-mist" : "text-stone"}`
               }
             >
               {l.label}
             </NavLink>
           ))}
           <a
-            href={waLink(
-              "Olá! Vim pelo site da LAG-Manutenções e gostaria de atendimento."
-            )}
+            href={waLink("Olá! Vim pelo site da LG Industrial e gostaria de atendimento.")}
             target="_blank"
             rel="noopener noreferrer"
             data-testid="mobile-nav-whatsapp-btn"
@@ -102,23 +84,19 @@ function Navbar() {
 
 function Footer() {
   return (
-    <footer
-      className="border-t border-white/5 bg-canvas"
-      data-testid="site-footer"
-    >
+    <footer className="border-t border-white/5 bg-canvas" data-testid="site-footer">
       <div className="max-w-7xl mx-auto px-6 md:px-12 pt-20 pb-10">
         <div className="grid md:grid-cols-3 gap-12 mb-20">
           <div>
             <p className="overline-label mb-4">Contato</p>
             <a
-              href={waLink("Olá! Vim pelo site da LAG-Manutenções.")}
+              href={waLink("Olá! Vim pelo site da LG Industrial.")}
               target="_blank"
               rel="noopener noreferrer"
               data-testid="footer-whatsapp-link"
               className="flex items-center gap-3 text-cream hover:text-mist transition-colors py-1"
             >
-              <MessageCircle size={16} className="text-earth" />{" "}
-              {WHATSAPP_DISPLAY}
+              <MessageCircle size={16} className="text-earth" /> {WHATSAPP_DISPLAY}
             </a>
             <a
               href={`mailto:${COMPANY_EMAIL}`}
@@ -131,16 +109,12 @@ function Footer() {
               <MapPin size={16} className="text-earth" /> {COMPANY_CITY}
             </p>
             <div className="mt-4 border-t border-white/5 pt-4">
-              <p className="text-xs font-bold uppercase tracking-widest text-stone mb-2">
-                Sócios
-              </p>
+              <p className="text-xs font-bold uppercase tracking-widest text-stone mb-2">Sócios</p>
               <div className="flex flex-col gap-2">
                 {SOCIOS.map((socio) => (
                   <p key={socio.nome} className="text-sm leading-snug">
                     <span className="text-cream">{socio.nome}</span>
-                    <span className="block text-xs text-stone">
-                      {socio.cargo}
-                    </span>
+                    <span className="block text-xs text-stone">{socio.cargo}</span>
                   </p>
                 ))}
               </div>
@@ -173,21 +147,19 @@ function Footer() {
           </div>
         </div>
         <div
-          className="font-display font-black leading-none text-cream/5 select-none whitespace-nowrap overflow-hidden text-[7vw]"
+          className="inline-flex items-center gap-[0.16em] font-display font-black leading-none text-cream/5 select-none whitespace-nowrap overflow-hidden text-[7vw]"
           aria-hidden="true"
         >
-          LAG MANUTENÇÕES
+          <img
+            src="/images/logo-lg-insdustrial.png"
+            alt=""
+            className="h-[0.8em] w-auto shrink-0 opacity-5"
+          />
+          <span>LG INDUSTRIAL</span>
         </div>
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pt-8 border-t border-white/5 mt-4">
-          <p className="text-stone text-xs">
-            © 2026 LAG-Manutenções. Todos os direitos reservados. "Desenvolvido
-            por Fernando Pereira de Andrade"
-          </p>
-          <Link
-            to="/admin/login"
-            data-testid="footer-admin-link"
-            className="text-stone/50 text-xs hover:text-stone transition-colors"
-          >
+          <p className="text-stone text-xs">© 2026 LG Industrial. Todos os direitos reservados. "Desenvolvido por Fernando Pereira de Andrade"</p>
+          <Link to="/admin/login" data-testid="footer-admin-link" className="text-stone/50 text-xs hover:text-stone transition-colors">
             Área restrita
           </Link>
         </div>

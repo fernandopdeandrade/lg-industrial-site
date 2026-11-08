@@ -1,6 +1,6 @@
 export const WHATSAPP_NUMBER = "5555984316143";
 export const WHATSAPP_DISPLAY = "(55) 984316143";
-export const COMPANY_EMAIL = "pupygreen@gmail.com";
+export const COMPANY_EMAIL = "lgindustrial.comercial@gmail.com";
 export const COMPANY_CITY = "Uruguaiana, Rio Grande do Sul";
 
 export const waLink = (text) =>

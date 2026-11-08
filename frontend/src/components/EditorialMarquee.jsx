@@ -2,7 +2,7 @@ import Marquee from "react-fast-marquee";
 
 const ITEMS = [
   "Tecnologia de ponta em manutenção agrícola",
-  "LAG-Manutenções",
+  "LG Industrial",
   "Uruguaiana — Rio Grande do Sul",
   "Diagnóstico · Manutenção · Campo",
   "Máquinas de última geração",
@@ -11,7 +11,7 @@ const ITEMS = [
 export default function EditorialMarquee() {
   return (
     <div
-      className="border-y border-white/5 bg-[#0D2540] py-6 overflow-hidden"
+      className="border-y border-white/5 bg-[#0D120E] py-6 overflow-hidden"
       data-testid="editorial-marquee"
     >
       <Marquee speed={28} gradient={false}>

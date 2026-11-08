@@ -264,11 +264,11 @@ def _email_table(rows: List[tuple], title: str) -> str:
     )
     return (
         '<table role="presentation" width="100%" style="background:#0A0D0B;padding:32px 0"><tr><td align="center">'
-        '<table role="presentation" width="560" style="background:#102843;border:1px solid #29445f">'
-        f'<tr><td style="padding:24px;font-family:Arial,sans-serif"><p style="margin:0;font-size:11px;letter-spacing:3px;color:#72B7FF;text-transform:uppercase">LAG-Manutenções</p>'
-        f'<h1 style="margin:8px 0 16px;font-size:22px;color:#F4F8FF">{escape(title)}</h1></td></tr>'
+        '<table role="presentation" width="560" style="background:#111612;border:1px solid #232b24">'
+        f'<tr><td style="padding:24px;font-family:Arial,sans-serif"><p style="margin:0;font-size:11px;letter-spacing:3px;color:#996236;text-transform:uppercase">LG Industrial</p>'
+        f'<h1 style="margin:8px 0 16px;font-size:22px;color:#EAEFE8">{escape(title)}</h1></td></tr>'
         f"{cells}"
-        '<tr><td style="padding:20px 16px;font-family:Arial,sans-serif;font-size:11px;color:#A6B7CA">Enviado pelo site da LAG-Manutenções. Nunca pedimos senhas ou dados de cartão por e-mail.</td></tr>'
+        '<tr><td style="padding:20px 16px;font-family:Arial,sans-serif;font-size:11px;color:#8B968A">Enviado pelo site da LG Industrial. Nunca pedimos senhas ou dados de cartão por e-mail.</td></tr>'
         "</table></td></tr></table>"
     )
 
@@ -416,7 +416,7 @@ async def delete_quote(quote_id: str, admin: dict = Depends(get_current_admin)):
 
 @api_router.get("/")
 async def root():
-    return {"message": "API da LAG-Manutenções"}
+    return {"message": "LG Industrial API"}
 
 
 # ---------------- Startup ----------------
@@ -452,7 +452,7 @@ async def seed_admin():
             "id": str(uuid.uuid4()),
             "email": admin_email,
             "password_hash": hash_password(admin_password),
-            "name": "Administrador LAG-Manutenções",
+            "name": "Administrador LG Industrial",
             "role": "admin",
             "created_at": datetime.now(timezone.utc).isoformat(),
         })

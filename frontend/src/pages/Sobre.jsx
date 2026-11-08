@@ -7,7 +7,7 @@ const CHAPTERS = [
   {
     num: "01",
     title: "Raízes na fronteira",
-    text: "A LAG-Manutenções nasceu em Uruguaiana, no coração da fronteira oeste gaúcha, onde a lavoura e a pecuária dão o ritmo da vida. Crescemos ouvindo o mesmo problema de sempre: máquina boa parada por falta de manutenção especializada. Decidimos ser a resposta.",
+    text: "A LG Industrial nasceu em Uruguaiana, no coração da fronteira oeste gaúcha, onde a lavoura e a pecuária dão o ritmo da vida. Crescemos ouvindo o mesmo problema de sempre: máquina boa parada por falta de manutenção especializada. Decidimos ser a resposta.",
   },
   {
     num: "02",
@@ -26,15 +26,10 @@ export default function Sobre() {
     <div data-testid="sobre-page">
       <section className="max-w-7xl mx-auto px-6 md:px-12 pt-40 pb-16">
         <p className="overline-label mb-6">Sobre nós</p>
-        <h1
-          className="font-display font-black tracking-tighter leading-[0.92] text-5xl sm:text-6xl md:text-7xl text-cream"
-          data-testid="sobre-title"
-        >
+        <h1 className="font-display font-black tracking-tighter leading-[0.92] text-5xl sm:text-6xl md:text-7xl text-cream" data-testid="sobre-title">
           <MaskedLine delay={0.1}>NOSSA</MaskedLine>
           <MaskedLine delay={0.25}>
-            <span className="font-serif italic font-medium text-earth">
-              história.
-            </span>
+            <span className="font-serif italic font-medium text-earth">história.</span>
           </MaskedLine>
         </h1>
       </section>
@@ -42,11 +37,7 @@ export default function Sobre() {
       <section className="max-w-7xl mx-auto px-6 md:px-12 pb-24">
         <Reveal>
           <div className="clip-corner overflow-hidden h-[50vh] md:h-[65vh] relative">
-            <img
-              src={IMAGES.repair}
-              alt="Equipe da LAG-Manutenções em manutenção"
-              className="w-full h-full object-cover"
-            />
+            <img src={IMAGES.repair} alt="Equipe LG Industrial em manutenção" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-canvas/80 to-transparent" />
             <p className="absolute bottom-8 left-8 font-serif italic text-2xl md:text-3xl text-cream/90 max-w-md">
               "Precisão de fábrica, no meio do campo."
@@ -60,20 +51,11 @@ export default function Sobre() {
         <div className="flex flex-col gap-20">
           {CHAPTERS.map((c, i) => (
             <Reveal key={c.num} delay={i * 0.05}>
-              <div
-                className="grid md:grid-cols-[auto_1fr] gap-6 md:gap-16 items-start border-t border-white/5 pt-12"
-                data-testid={`sobre-chapter-${c.num}`}
-              >
-                <span className="font-serif italic text-6xl md:text-8xl text-earth/30 leading-none">
-                  {c.num}
-                </span>
+              <div className="grid md:grid-cols-[auto_1fr] gap-6 md:gap-16 items-start border-t border-white/5 pt-12" data-testid={`sobre-chapter-${c.num}`}>
+                <span className="font-serif italic text-6xl md:text-8xl text-earth/30 leading-none">{c.num}</span>
                 <div className="max-w-2xl">
-                  <h2 className="font-display font-bold tracking-tight text-3xl sm:text-4xl text-cream">
-                    {c.title}
-                  </h2>
-                  <p className="mt-5 text-stone text-base md:text-lg font-light leading-relaxed">
-                    {c.text}
-                  </p>
+                  <h2 className="font-display font-bold tracking-tight text-3xl sm:text-4xl text-cream">{c.title}</h2>
+                  <p className="mt-5 text-stone text-base md:text-lg font-light leading-relaxed">{c.text}</p>
                 </div>
               </div>
             </Reveal>
@@ -94,12 +76,8 @@ export default function Sobre() {
                     .map((parte) => parte[0])
                     .join("")}
                 </div>
-                <h3 className="font-display text-2xl font-bold text-cream leading-tight">
-                  {socio.nome}
-                </h3>
-                <p className="mt-3 text-sm uppercase tracking-[0.18em] text-earth">
-                  {socio.cargo}
-                </p>
+                <h3 className="font-display text-2xl font-bold text-cream leading-tight">{socio.nome}</h3>
+                <p className="mt-3 text-sm uppercase tracking-[0.18em] text-earth">{socio.cargo}</p>
               </div>
             </Reveal>
           ))}
@@ -110,10 +88,7 @@ export default function Sobre() {
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-24">
           <Reveal>
             <h2 className="font-display font-black tracking-tighter text-4xl sm:text-5xl text-cream max-w-2xl leading-[0.95]">
-              Venha tomar um café{" "}
-              <span className="font-serif italic font-medium text-earth">
-                na oficina.
-              </span>
+              Venha tomar um café <span className="font-serif italic font-medium text-earth">na oficina.</span>
             </h2>
             <Link
               to="/contato"
@@ -121,10 +96,7 @@ export default function Sobre() {
               className="group mt-10 inline-flex items-center gap-2 bg-leaf text-cream px-8 py-4 text-xs font-bold uppercase tracking-widest hover:bg-leaf-light active:scale-95 transition-all duration-300"
             >
               Fale conosco
-              <ArrowRight
-                size={14}
-                className="group-hover:translate-x-1 transition-transform duration-300"
-              />
+              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-300" />
             </Link>
           </Reveal>
         </div>

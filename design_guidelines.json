@@ -1,6 +1,6 @@
 {
   "project_info": {
-    "name": "LAG-Manutenções",
+    "name": "LG Industrial",
     "location": "Uruguaiana, RS (Brazil)",
     "contact": {
       "phone": "+55 99721-1650",
@@ -11,9 +11,9 @@
     "app_type": "hybrid_fullstack"
   },
   "design_concept": {
-    "direction": "Dark Editorial Industrial. Blending high-end machinery precision with agricultural environments. The aesthetic is 'technical credibility meets natural power'—like a luxury car brand, but for cutting-edge agricultural machinery. It uses a deep navy foundation, crisp white typography, and precise blue accents.",
+    "direction": "Dark Editorial Industrial. Blending high-end machinery precision with organic earthly environments. The aesthetic is 'technical credibility meets natural power'—like a luxury car brand, but for cutting-edge agricultural machinery. It pushes a dark-mode foundation utilizing 'Archetype 1: Organic & Earthy' tones.",
     "core_principles": [
-      "Emotion First: The tension between cold metallic precision and the open agricultural landscape.",
+      "Emotion First: The tension between cold metallic precision and warm earthy nature.",
       "Contrast: Deep shadows vs. spotlight product photography.",
       "Asymmetry: Bento grid structures and offset text to create an editorial flow.",
       "Motion: Premium momentum scrolling (Lenis) and kinetic text reveals (Framer Motion)."
@@ -21,16 +21,16 @@
   },
   "theme": "dark",
   "colors": {
-    "background": "#081A30",
-    "surface": "#102843",
-    "surface_glass": "rgba(16, 40, 67, 0.82)",
-    "primary": "#2F75D5",
-    "primary_hover": "#4A90E2",
-    "accent_blue": "#72B7FF",
-    "accent_ice": "#D3E7FF",
-    "text_main": "#F4F8FF",
-    "text_muted": "#A6B7CA",
-    "border": "rgba(166, 183, 202, 0.18)",
+    "background": "#0A0D0B",
+    "surface": "#111612",
+    "surface_glass": "rgba(17, 22, 18, 0.7)",
+    "primary": "#4A6E46",
+    "primary_hover": "#5A8555",
+    "accent_earth": "#996236",
+    "accent_tech": "#D1E2C7",
+    "text_main": "#EAEFE8",
+    "text_muted": "#8B968A",
+    "border": "rgba(139, 150, 138, 0.15)",
     "error": "#993636"
   },
   "typography": {
@@ -42,8 +42,8 @@
       "h2": "text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight",
       "h3": "text-2xl sm:text-3xl font-medium tracking-tight",
       "body": "text-base md:text-lg leading-relaxed text-text_muted font-light",
-      "manifesto_numbers": "font-serif text-6xl md:text-8xl text-accent_blue/30 italic",
-      "overline": "text-xs font-bold tracking-[0.2em] uppercase text-accent_blue"
+      "manifesto_numbers": "font-serif text-6xl md:text-8xl text-accent_earth/30 italic",
+      "overline": "text-xs font-bold tracking-[0.2em] uppercase text-accent_earth"
     },
     "notes": "No Inter or generic sans for headings. Use Cabinet Grotesk for industrial heft. Use Cormorant Garamond strictly for the numbered manifesto chapters for that editorial contrast."
   },
@@ -62,7 +62,7 @@
     "scrolling": "Lenis (smooth momentum scrolling) is MANDATORY.",
     "hero_reveal": "Framer Motion: Masked line-by-line text reveal. Use `overflow: hidden` on lines, and animate `y: '100%'` to `y: '0%'` with `ease: [0.76, 0, 0.24, 1]`.",
     "parallax": "Subtle framer-motion `useScroll` and `useTransform` on hero background images.",
-    "marquee": "React Fast Marquee: Slow, elegant editorial ribbon. Low contrast (navy bg, blue text), wide gaps (gap-32), font-serif.",
+    "marquee": "React Fast Marquee: Slow, elegant editorial ribbon. Low contrast (dark green bg, earthy text), wide gaps (gap-32), font-serif.",
     "scroll_reveals": "Staggered fade-up (`y: 40`, `opacity: 0`) for sections as they enter viewport.",
     "micro_interactions": "Buttons have a subtle scale-down on click, arrow icons translate-x-1 on hover."
   },
@@ -70,9 +70,9 @@
     "home": {
       "hero": "Massive kinetic typography ('Potência e Precisão'). Background: Subtly parallaxing drone view of dark farm fields. Image overlay: bg-black/60. Line-by-line reveal on load.",
       "services_preview": "Bento grid of services. Hover states reveal spotlight images of machinery diagnostics.",
-      "marquee": "Slow scrolling text: 'TECNOLOGIA DE PONTA EM MANUTENÇÃO AGRÍCOLA • LAG-MANUTENÇÕES • '",
+      "marquee": "Slow scrolling text: 'TECNOLOGIA DE PONTA EM MANUTENÇÃO AGRÍCOLA • LG INDUSTRIAL • '",
       "products_teaser": "Horizontal scroll or asymmetrical bento featuring top-tier agricultural machinery with 'Solicitar Orçamento' buttons.",
-      "footer": "Massive 'LAG-Manutenções' text at the bottom. Clean, grid-based links."
+      "footer": "Massive 'LG Industrial' text at the bottom. Clean, grid-based links."
     },
     "produtos": {
       "layout": "Grid-based catalog. 1-col mobile, 3-col desktop.",
@@ -96,7 +96,7 @@
     },
     "admin": {
       "layout": "High-density dashboard. Sidebar navigation.",
-      "components": "Shadcn tables, data-cards. Purely functional, no parallax. Colors: Background #081A30, cards #102843.",
+      "components": "Shadcn tables, data-cards. Purely functional, no parallax. Colors: Background #0A0D0B, cards #111612.",
       "features": "Manage products, View contact messages/quotes."
     }
   },
