@@ -1,12 +1,12 @@
 services:
   mongodb:
     image: mongo:7
-    container_name: lg-industrial-mongo
+    container_name: lag-manutencoes-mongo
     restart: unless-stopped
     ports:
       - "27017:27017"
     environment:
-      MONGO_INITDB_DATABASE: lg_industrial
+      MONGO_INITDB_DATABASE: lag_manutencao
     volumes:
       - mongo_data:/data/db
 

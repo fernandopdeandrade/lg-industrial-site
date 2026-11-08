@@ -1,10 +1,10 @@
-import { Reveal, MaskedLine } from "@/components/Reveal";
+import { MaskedLine, Reveal } from "@/components/Reveal";
 
 const SECTIONS = [
   {
     num: "01",
     title: "Política de Qualidade",
-    text: "A LG Industrial compromete-se a executar todos os serviços de manutenção seguindo os manuais técnicos dos fabricantes, utilizando peças originais ou homologadas e ferramentas calibradas. Todo serviço entregue possui garantia e registro de ordem de serviço.",
+    text: "A LAG-Manutenções compromete-se a executar todos os serviços de manutenção seguindo os manuais técnicos dos fabricantes, utilizando peças originais ou homologadas e ferramentas calibradas. Todo serviço entregue possui garantia e registro de ordem de serviço.",
   },
   {
     num: "02",
@@ -38,16 +38,22 @@ export default function Politica() {
     <div data-testid="politica-page">
       <section className="max-w-3xl mx-auto px-6 pt-40 pb-16">
         <p className="overline-label mb-6">Política da empresa</p>
-        <h1 className="font-display font-black tracking-tighter leading-[0.92] text-5xl sm:text-6xl md:text-7xl text-cream" data-testid="politica-title">
+        <h1
+          className="font-display font-black tracking-tighter leading-[0.92] text-5xl sm:text-6xl md:text-7xl text-cream"
+          data-testid="politica-title"
+        >
           <MaskedLine delay={0.1}>NOSSOS</MaskedLine>
           <MaskedLine delay={0.25}>
-            <span className="font-serif italic font-medium text-earth">compromissos.</span>
+            <span className="font-serif italic font-medium text-earth">
+              compromissos.
+            </span>
           </MaskedLine>
         </h1>
         <Reveal delay={0.4}>
           <p className="mt-8 text-base md:text-lg text-stone font-light leading-relaxed">
-            A política da LG Industrial orienta cada atendimento, cada orçamento e cada parafuso apertado.
-            Última atualização: janeiro de 2026.
+            A política da LAG-Manutenções orienta cada atendimento, cada
+            orçamento e cada parafuso apertado. Última atualização: janeiro de
+            2026.
           </p>
         </Reveal>
       </section>
@@ -56,11 +62,20 @@ export default function Politica() {
         <div className="divide-y divide-white/5 border-y border-white/5">
           {SECTIONS.map((s, i) => (
             <Reveal key={s.num} delay={i * 0.04}>
-              <article className="py-12 grid sm:grid-cols-[auto_1fr] gap-6 items-start" data-testid={`politica-section-${s.num}`}>
-                <span className="font-serif italic text-5xl text-earth/30 leading-none">{s.num}</span>
+              <article
+                className="py-12 grid sm:grid-cols-[auto_1fr] gap-6 items-start"
+                data-testid={`politica-section-${s.num}`}
+              >
+                <span className="font-serif italic text-5xl text-earth/30 leading-none">
+                  {s.num}
+                </span>
                 <div>
-                  <h2 className="font-display font-bold tracking-tight text-2xl text-cream">{s.title}</h2>
-                  <p className="mt-4 text-stone text-base leading-relaxed">{s.text}</p>
+                  <h2 className="font-display font-bold tracking-tight text-2xl text-cream">
+                    {s.title}
+                  </h2>
+                  <p className="mt-4 text-stone text-base leading-relaxed">
+                    {s.text}
+                  </p>
                 </div>
               </article>
             </Reveal>

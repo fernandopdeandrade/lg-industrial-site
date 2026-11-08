@@ -1,6 +1,6 @@
-# LG Industrial — Site Institucional + Painel Admin
+# LAG-Manutenções — Site Institucional + Painel Admin
 
-Site da **LG Industrial** (Uruguaiana, RS): manutenção de máquinas agrícolas de última geração.
+Site da **LAG-Manutenções** (Uruguaiana, RS): manutenção de máquinas agrícolas de última geração.
 Stack: **React 19 + Tailwind + FastAPI + MongoDB**, com envio de e-mails via proxy de e-mail da Emergent.
 
 ---
@@ -29,13 +29,13 @@ uvicorn server:app --host 0.0.0.0 --port 8001 --reload
 | Variável | Descrição |
 |---|---|
 | `MONGO_URL` | URL do MongoDB (ex: `mongodb://localhost:27017`) |
-| `DB_NAME` | Nome do banco (ex: `lg_industrial`) |
+| `DB_NAME` | Nome do banco (ex: `lag_manutencao`) |
 | `FRONTEND_URL` | URL do frontend (ex: `http://localhost:3000`) |
 | `JWT_SECRET` | Chave secreta do JWT (gere com `openssl rand -hex 32`) |
 | `ADMIN_EMAIL` | E-mail do administrador do painel |
 | `ADMIN_PASSWORD` | Senha do administrador (redefinida a cada restart se mudar no .env) |
 | `EMERGENT_EMAIL_KEY` | Chave do proxy de e-mail Emergent (necessária p/ envio de e-mails) |
-| `EMAIL_FROM_NAME` | Nome exibido como remetente (`LG Industrial`) |
+| `EMAIL_FROM_NAME` | Nome exibido como remetente (`LAG-Manutenções`) |
 | `EMAIL_REPLY_TO` | Caixa de resposta (ex: `pupygreen@gmail.com`) |
 | `OWNER_EMAIL` | E-mail que recebe contatos e orçamentos |
 

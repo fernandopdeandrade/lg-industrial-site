@@ -3,72 +3,78 @@
 @tailwind utilities;
 
 @layer base {
-    :root {
-        --background: 140 13% 4%;
-        --foreground: 103 21% 92%;
-        --card: 132 13% 8%;
-        --card-foreground: 103 21% 92%;
-        --popover: 132 13% 8%;
-        --popover-foreground: 103 21% 92%;
-        --primary: 114 22% 35%;
-        --primary-foreground: 103 21% 92%;
-        --secondary: 132 13% 12%;
-        --secondary-foreground: 103 21% 92%;
-        --muted: 132 10% 14%;
-        --muted-foreground: 115 5% 57%;
-        --accent: 27 48% 41%;
-        --accent-foreground: 103 21% 92%;
-        --destructive: 0 49% 41%;
-        --destructive-foreground: 103 21% 92%;
-        --border: 115 6% 18%;
-        --input: 115 6% 20%;
-        --ring: 114 22% 45%;
-        --radius: 0.25rem;
-    }
+  :root {
+    --background: 213 71% 11%;
+    --foreground: 214 100% 98%;
+    --card: 212 60% 16%;
+    --card-foreground: 214 100% 98%;
+    --popover: 212 60% 16%;
+    --popover-foreground: 214 100% 98%;
+    --primary: 215 65% 51%;
+    --primary-foreground: 214 100% 98%;
+    --secondary: 210 57% 21%;
+    --secondary-foreground: 214 100% 98%;
+    --muted: 211 49% 21%;
+    --muted-foreground: 213 27% 72%;
+    --accent: 209 100% 72%;
+    --accent-foreground: 213 71% 11%;
+    --destructive: 0 49% 41%;
+    --destructive-foreground: 103 21% 92%;
+    --border: 211 39% 27%;
+    --input: 211 39% 27%;
+    --ring: 215 65% 60%;
+    --radius: 0.25rem;
+  }
 }
 
 @layer base {
-    * {
-        @apply border-border;
-    }
-    html {
-        scroll-behavior: auto;
-    }
-    body {
-        @apply bg-background text-foreground font-body;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    ::selection {
-        background: #4a6e46;
-        color: #eaefe8;
-    }
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-    ::-webkit-scrollbar-track {
-        background: #0a0d0b;
-    }
-    ::-webkit-scrollbar-thumb {
-        background: #2a332b;
-        border-radius: 0;
-    }
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection {
+    background: #2f75d5;
+    color: #f4f8ff;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #081a30;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #29445f;
+    border-radius: 0;
+  }
 }
 
 @layer utilities {
-    .clip-corner {
-        clip-path: polygon(0 0, 100% 0, 100% calc(100% - 24px), calc(100% - 24px) 100%, 0 100%);
-    }
-    .overline-label {
-        @apply text-xs font-bold tracking-[0.25em] uppercase text-earth;
-    }
-    .field-input {
-        @apply w-full bg-transparent border-0 border-b border-white/15 px-0 py-3 text-cream placeholder:text-stone/50 focus:outline-none focus:border-leaf transition-colors duration-300 text-base;
-    }
+  .clip-corner {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 24px),
+      calc(100% - 24px) 100%,
+      0 100%
+    );
+  }
+  .overline-label {
+    @apply text-xs font-bold tracking-[0.25em] uppercase text-earth;
+  }
+  .field-input {
+    @apply w-full bg-transparent border-0 border-b border-white/15 px-0 py-3 text-cream placeholder:text-stone/50 focus:outline-none focus:border-leaf transition-colors duration-300 text-base;
+  }
 }
 
 @layer base {
-    [data-debug-wrapper="true"] {
-        display: contents !important;
-    }
+  [data-debug-wrapper="true"] {
+    display: contents !important;
+  }
 }
